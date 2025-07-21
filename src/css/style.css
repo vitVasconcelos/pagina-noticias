@@ -1,0 +1,196 @@
+:root{
+    --Orange: hsl(35, 77%, 62%);
+    --red: hsl(5, 85%, 63%);
+    --Offwhite: hsl(36, 100%, 99%);
+    --Grayishblue: hsl(233, 8%, 79%);
+    --Darkgrayishblue: hsl(236, 13%, 42%);
+    --darkblue: hsl(240, 100%, 5%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;       
+    min-height: 80vh;  
+}
+header{
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav img{
+    width: 40px;
+    height: 35px;
+    margin-left: -55px;
+}
+nav ul li {
+    margin: 0 15px;
+    list-style: none; 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: var(--darkblue);
+    font-weight: 300;
+    cursor: pointer;
+}
+nav a:hover{
+    color: var(--red);
+}
+main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.foto{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
+}
+.foto img{
+    width: 630px;
+    height: 250px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+.titulo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 350px;
+}
+.titulo h1{
+    width: 75%;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.titulo-text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 350px;
+
+}
+.titulo-text p{
+    width: 100%;
+    color: var(--Darkgrayishblue);
+    text-align: left;
+    margin-top: 25px;
+    margin-left: -60px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.titulo-text button{
+    margin-top: 20px;
+    margin-left: -60px;
+    padding: 10px 25px;
+    border: none;
+    color: var(--darkblue);
+    background-color: var(--red);
+    font-weight: 700;
+    cursor: pointer;
+}
+.titulo-text button:hover{
+    background-color: var(--darkblue);
+    color: var(--Offwhite);
+}
+.new{
+   
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: var(--darkblue);
+    color: var(--Offwhite);
+    width: 250px;
+    height: 400px;
+    margin-top: 32px;
+    margin-left: -20px;
+}
+.new h2{
+    color: var(--Orange);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.new ul li{
+    list-style: none;
+    margin: 15px;
+}
+.new li h3{
+    font-size: 15px;
+}
+.new h3:hover{
+    color: var(--Orange);
+    cursor: pointer;
+}
+.new li p{
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 15px 0 15px;
+    line-height: 1.6
+}
+.new hr {
+    border: none;
+    border-top: 0.1px solid var(--Grayishblue); /* Mais fina ainda */
+  }
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+footer .top{
+    display: flex;
+    flex-direction: row;
+}
+.top img{
+    width: 100px;
+    height: 90px;
+}
+.top .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.top h2{
+    color: var(--red);    
+}
+.top h3{
+    font-size: 15px;
+}
+.top h3:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+.top p{
+    width: 65%;
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--Darkgrayishblue);
+}
