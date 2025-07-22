@@ -41,10 +41,13 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
-nav img{
+nav .logo{
     width: 40px;
     height: 35px;
     margin-left: -55px;
+}
+#menu-icon{
+    display: none;
 }
 nav ul li {
     margin: 0 15px;
@@ -61,6 +64,57 @@ nav ul{
 nav a:hover{
     color: var(--red);
 }
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    padding: 30px 20px;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  
+  .menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+  }
+  
+  .menu-lateral ul li {
+    margin: 20px 0;
+  }
+  
+  .menu-lateral ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--darkblue);
+    font-weight: 500;
+  }
+  
+  .menu-lateral ul li a:hover {
+    color: var(--red);
+  }
+  
+  .menu-lateral.ativo {
+    right: 0;
+  }
+  
+  .fechar-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+
 main{
     width: 100%;
     height: auto;
@@ -194,3 +248,5 @@ footer .top{
     font-size: 12px;
     color: var(--Darkgrayishblue);
 }
+
+  

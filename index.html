@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
     <title>Página de Notícias</title>
 </head>
 
@@ -18,20 +19,31 @@
     <div class="container">
         <header class="cabecalho">
             <nav>
-                <img src="/src/imagens/logo.svg" alt="logo">
-                <ul class="nav-list">
+                <img class= "logo"src="/src/imagens/logo.svg" alt="logo">
+                <ul class="nav-list" id="nav-list">
                     <li><a>Home</a></li>
                     <li><a>New</a></li>
                     <li><a>Popular</a></li>
                     <li><a>Trending</a></li>
                     <li><a>Categories</a></li>
                 </ul>
+                <img id= "menu-icon"src="/src/imagens/icon-menu.svg" alt="">
             </nav>
+            <div class="menu-lateral" id="menu-lateral">
+                <img src="/src/imagens/icon-menu-close.svg" alt="Fechar" id="fechar-menu" class="fechar-icon">
+                <ul>
+                  <li><a>Home</a></li>
+                  <li><a>New</a></li>
+                  <li><a>Popular</a></li>
+                  <li><a>Trending</a></li>
+                  <li><a>Categories</a></li>
+                </ul>
+              </div>
         </header>
 
         <main>
             <div class="foto">
-                <img src="/src/imagens/image-web-3-desktop.jpg" alt="">
+                <img id="foto"src="/src/imagens/image-web-3-desktop.jpg" alt=""> 
             </div>
             
             <div class="titulo">
@@ -93,8 +105,8 @@
             </div>
         </footer>
     </div>
-
-
+    
+    <script src="/src/javascript/scripts.js"></script>
 </body>
 
 </html>
