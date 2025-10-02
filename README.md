@@ -1,6 +1,6 @@
 Página de Notícias 
 
-Projeto front-end de uma página de notícias com design responsivo e menu lateral para dispositivos móveis.
+Projeto front-end de uma página de notícias com design responsivo e menu lateral para dispositivos móveis. Este projeto foi desenvolvido para um desafio do Frontend Mentor https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl
 
 📸Prévia
 <img width="1339" height="635" alt="image" src="https://github.com/user-attachments/assets/3b92a1b8-7c86-45a5-882b-6af0218a99d2" />
