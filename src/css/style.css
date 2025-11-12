@@ -209,7 +209,7 @@ main{
 }
 .new hr {
     border: none;
-    border-top: 0.1px solid var(--Grayishblue); /* Mais fina ainda */
+    border-top: 0.1px solid var(--Grayishblue); 
   }
 footer{
     display: flex;

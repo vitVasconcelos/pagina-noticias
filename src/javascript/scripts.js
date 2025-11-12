@@ -1,9 +1,9 @@
 function trocarImagem() {
     const foto = document.getElementById('foto');
     if (window.innerWidth <= 450) {
-      foto.src = "/src/imagens/image-web-3-mobile.jpg";
+      foto.src = "./src/imagens/image-web-3-mobile.jpg";
     } else {
-      foto.src = "/src/imagens/image-web-3-desktop.jpg";
+      foto.src = "./src/imagens/image-web-3-desktop.jpg";
     }
   }
   
